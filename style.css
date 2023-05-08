@@ -242,3 +242,34 @@ header {
 }
 
 /* END CATEGORIES  */
+
+/* COURSES SECTION  */
+.courses {
+    margin-top: 5rem;
+}
+
+.courses__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.course {
+    background: var(--color-bg1);
+    text-align: center;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.course:hover {
+    background: transparent;
+    border-color: var(--color-primary);
+}
+
+.course__info {
+    margin: 1.2rem 0 2rem;
+    font-size: 0.9rem;
+}
+
+/* end courses  */
+ /* FAQS STYLING  */
