@@ -342,6 +342,7 @@ header {
     background: var(--color-primary);
     padding: 2rem;
     margin-top: 3rem;
+    position: relative;
  }
 
  .testimonial__body::before {
