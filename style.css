@@ -523,4 +523,32 @@ header {
         margin-right: 0;
     }
 
+    /* POPULAR COURSES  */
+    .courseS {
+        margin-top: 0;
+    }
+
+    .courses__container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* FAQS  */
+    .faqs__container {
+        grid-template-columns: 1fr;
+    }
+
+    .faq {
+        padding: 1.5rem;
+    }
+
+    /* FOOTER  */
+    .footer__container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Media QUERY 600PX (Phone)  */
+
+@media  screen and (max-width: 600px) {
+    
 }
