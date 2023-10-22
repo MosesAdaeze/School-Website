@@ -48,3 +48,29 @@ const closeNav = () => {
 }
 
 closeBtn.addEventListener('click', closeNav)
+
+// CURRICULUM
+function openCurri(evt, cityName) {
+    var i, x, tablinks;
+    x = document.getElementsByClassName("curriculum");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+
+
+//FAQ
+  function toggleAnswer(index) {
+    var answer = document.getElementById('answer-' + index);
+    if (answer.style.display === 'none') {
+        answer.style.display = 'block';
+    } else {
+        answer.style.display = 'none';
+    }
+}

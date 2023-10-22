@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+</head>
+<body>
+
+    <section class="course-options_container">
+        <div class="course-options_content">
+            <div class="w3-bar w3-black">
+                <ul class="options_list">
+                    <li class="w3-bar-item w3-button tablink w3-red active" onclick="openTab(event,'first')">Course Details</li>
+                    <li class="w3-bar-item w3-button tablink" onclick="openTab(event,'second')">Curriculum</li>
+                    <li class="w3-bar-item w3-button tablink" onclick="openTab(event,'third')">FAQ</li>
+                    <li class="w3-bar-item w3-button tablink" onclick="openTab(event,'fourth')">Instructors</li>
+                    <li class="w3-bar-item w3-button tablink" onclick="openTab(event,'fifth')">Reviews</li>
+                </ul>
+            </div>
+
+            <button class="button button1"><a href="#">Register</a></button>
+        </div>
+    </section>
+
+
+    <div class="video-container">
+        <video width="800" height="auto" controls>
+          <source src="images/Untitled.mov" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="play-button"></div>
+      </div>
+
+
+    <div class="faq-container">
+        <h1>Frequently Asked Questions</h1>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(1)"><a href="#">Question 1: How do I create an account?</a>
+                <i class="uil uil-angle-down"></i>
+            </div>
+            <div class="faq-answer" id="answer-1">Answer 1: To create an account, click on the 'Sign Up' button and fill out the registration form.</div>
+        </div>
+       
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(2)"><a href="#">Question 1: How do I create an account?</a>
+                <i class="uil uil-angle-down"></i>
+            </div>
+            <div class="faq-answer" id="answer-2">Answer 1: To create an account, click on the 'Sign Up' button and fill out the registration form.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(3)"><a href="#">Question 1: How do I create an account?</a>
+                <i class="uil uil-angle-down"></i>
+            </div>
+            <div class="faq-answer" id="answer-3">Answer 1: To create an account, click on the 'Sign Up' button and fill out the registration form.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(4)">Question 2: Can I change my password?</div>
+            <div class="faq-answer" id="answer-4">Answer 2: Yes, you can change your password by going to the 'Account Settings' page and selecting the 'Change Password' option.</div>
+        </div>
+        <!-- Add more FAQ items here -->
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="curriculum_container" id="curriculum">
+        <h3>Curriculum</h3>
+        <div class="curriculum_content">
+            <div class="curriculum_list">
+                <ul>
+                    <li class="w3-bar-item w3-button tablink active" onclick="openCurri(event,'first')">Design Thinking<i class="uil uil-arrow-right"></i></li>
+                    <li class="w3-bar-item w3-button tablink" onclick="openCurri(event,'second')">User Research<i class="uil uil-arrow-right"></i></li>
+                    <li class="w3-bar-item w3-button tablink" onclick="openCurri(event,'third')">Synthesis & Presentation<i class="uil uil-arrow-right"></i></li>
+                    <li class="w3-bar-item w3-button tablink" onclick="openCurri(event,'fourth')">wireframing, sketching and ui<i class="uil uil-arrow-right"></i></li>
+                    <li class="w3-bar-item w3-button tablink" onclick="openCurri(event,'fifth')">idating & design<i class="uil uil-arrow-right"></i></a></li>
+                    <li class="w3-bar-item w3-button tablink" onclick="openCurri(event,'sixth')">design sprints<i class="uil uil-arrow-right"></i></a></li>
+                    <li class="w3-bar-item w3-button tablink" onclick="openCurri(event,'seventh')">special topics<i class="uil uil-arrow-right"></i></a></li>
+                </ul>
+            </div>
+
+            <div id="first" class="w3-container w3-border curriculum curriculum_details">
+                <h4>Design Thinking</h4>
+                <p>User research is central to UX design. when you engage users and understand their experience, you can move<br>
+                    from being aware of a problem to understanding why the problem exists and what users want to resolved.<br>
+                    There are many different user research tools; this section will explore the most effective of them.<br>
+                    Topics include: user research methods, research plans, recruiting users through screener surveys, diary studies,<br>
+                    and intrviews.<br>
+                    In this UCD discovery unit, you'll work on some mini-projects to shaepen your research skills and then apply<br>
+                    those skills to your capstone projects.
+                </p>
+                <a href="#">Read More</a>
+            </div>
+            <div id="second" class="w3-container w3-border curriculum curriculum_details" style="display:none">
+                <h4>User Research</h4>
+                <p>User research is central to UX design. when you engage users and understand their experience, you can move<br>
+                    from being aware of a problem to understanding why the problem exists and what users want to resolved.<br>
+                    There are many different user research tools; this section will explore the most effective of them.<br>
+                    Topics include: user research methods, research plans, recruiting users through screener surveys, diary studies,<br>
+                    and intrviews.<br>
+                    In this UCD discovery unit, you'll work on some mini-projects to shaepen your research skills and then apply<br>
+                    those skills to your capstone projects.
+                </p>
+                <a href="#">Read More</a>
+            </div>
+
+            <div id="third" class="w3-container w3-border curriculum curriculum_details" style="display:none">
+                <h4>Synthesis & Presentation</h4>
+                <p>User research is central to UX design. when you engage users and understand their experience, you can move<br>
+                    from being aware of a problem to understanding why the problem exists and what users want to resolved.<br>
+                    There are many different user research tools; this section will explore the most effective of them.<br>
+                    Topics include: user research methods, research plans, recruiting users through screener surveys, diary studies,<br>
+                    and intrviews.<br>
+                    In this UCD discovery unit, you'll work on some mini-projects to shaepen your research skills and then apply<br>
+                    those skills to your capstone projects.
+                </p>
+                <a href="#">Read More</a>
+            </div>
+
+            <div id="fourth" class="w3-container w3-border curriculum curriculum_details" style="display:none">
+                <h4>Wireframing, Sketching And Ui</h4>
+                <p>User research is central to UX design. when you engage users and understand their experience, you can move<br>
+                    from being aware of a problem to understanding why the problem exists and what users want to resolved.<br>
+                    There are many different user research tools; this section will explore the most effective of them.<br>
+                    Topics include: user research methods, research plans, recruiting users through screener surveys, diary studies,<br>
+                    and intrviews.<br>
+                    In this UCD discovery unit, you'll work on some mini-projects to shaepen your research skills and then apply<br>
+                    those skills to your capstone projects.
+                </p>
+                <a href="#">Read More</a>
+            </div>
+
+            <div id="fifth" class="w3-container w3-border curriculum curriculum_details" style="display:none">
+                <h4>Idating & Design</h4>
+                <p>User research is central to UX design. when you engage users and understand their experience, you can move<br>
+                    from being aware of a problem to understanding why the problem exists and what users want to resolved.<br>
+                    There are many different user research tools; this section will explore the most effective of them.<br>
+                    Topics include: user research methods, research plans, recruiting users through screener surveys, diary studies,<br>
+                    and intrviews.<br>
+                    In this UCD discovery unit, you'll work on some mini-projects to shaepen your research skills and then apply<br>
+                    those skills to your capstone projects.
+                </p>
+                <a href="#">Read More</a>
+            </div>
+
+            <div id="sixth" class="w3-container w3-border curriculum curriculum_details" style="display:none">
+                <h4>Design Sprints</h4>
+                <p>User research is central to UX design. when you engage users and understand their experience, you can move<br>
+                    from being aware of a problem to understanding why the problem exists and what users want to resolved.<br>
+                    There are many different user research tools; this section will explore the most effective of them.<br>
+                    Topics include: user research methods, research plans, recruiting users through screener surveys, diary studies,<br>
+                    and intrviews.<br>
+                    In this UCD discovery unit, you'll work on some mini-projects to shaepen your research skills and then apply<br>
+                    those skills to your capstone projects.
+                </p>
+                <a href="#">Read More</a>
+            </div>
+
+            <div id="seventh" class="w3-container w3-border curriculum curriculum_details" style="display:none">
+                <h4>Special Topics</h4>
+                <p>User research is central to UX design. when you engage users and understand their experience, you can move<br>
+                    from being aware of a problem to understanding why the problem exists and what users want to resolved.<br>
+                    There are many different user research tools; this section will explore the most effective of them.<br>
+                    Topics include: user research methods, research plans, recruiting users through screener surveys, diary studies,<br>
+                    and intrviews.<br>
+                    In this UCD discovery unit, you'll work on some mini-projects to shaepen your research skills and then apply<br>
+                    those skills to your capstone projects.
+                </p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <style>
+
+.video-container {
+    position: relative;
+    width: 400px; /* Adjust the width as needed */
+  }
+
+  .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    cursor: pointer;
+  }
+
+  /* Style the play button icon */
+  .play-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 0 10px 20px;
+    border-color: transparent transparent transparent white;
+  }
+
+        .faq-item {
+            border: 1px solid rgba(0,0,0,0.1);
+            width: 100%;
+            margin: 20px 0;
+    
+        }
+
+        .faq-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .faq-question {
+            font-weight: bold;
+            cursor: pointer;
+            padding: 0.5rem 1rem 0.5rem 1rem;
+            text-align: center;
+            color: rgb(0,0,0,0.8);
+            width: 100%;
+            border: none;
+            outline: none;
+            transition: 0.4s;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        .faq-question a{
+            text-decoration: none;
+            color: black;
+        }
+
+        .faq-item:hover {
+            background-color: #f1f7f5;
+        }
+
+        .faq-question i {
+            font-size: 2rem;
+            margin-right: 2rem;
+        }
+
+        .faq-answer {
+            text-align: center;
+            padding: 0 18px;
+            background-color: white;
+            display: none;
+            overflow: hidden;
+            background-color: #f1f7f5;
+            padding: 0 2rem 2.5rem 2rem;
+            display: none;
+            color: rgba(0,0,0,0.7);
+            font-size: 1.2rem;
+            line-height: 1.4;
+        }
+.curriculum_container {
+    padding: 0 3rem 0 3rem;
+}
+
+.curriculum_container h3{
+    padding: 3rem 0 1rem 0;
+}
+
+.curriculum_list li {
+    padding: 0 0 1.9rem 0;
+}
+
+.curriculum_list li {
+    font-size: 1.1rem;
+    color: black;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+
+.curriculum_list li.active {
+    color: aqua;
+    /* color: var(--color-thickgreen); */
+}
+
+.curriculum_list li:hover,
+.curriculum_list li.active:hover::before{
+    color: var(--color-thickgreen);
+    transition: all ease-in-out 250ms;
+}
+
+.curriculum_content {
+    display: flex;
+    gap: 4rem;
+}
+
+.curriculum_details {
+    width: 65%;
+    height: 100%;
+    padding: 1.5rem 0 1.5rem 1.3rem;
+    background-color: var(--color-lowWhite);
+    box-shadow: 3px 2px 8px rgb(0,0,0,0.06),
+                0px 3px 3px rgb(0,0,0,0.06);
+}
+
+.curriculum_details p {
+    padding: 1rem 0 1.5rem 0;
+}
+
+.curriculum_details a{
+    color: var(--color-thickgreen);
+}
+    </style>
+
+    <script src="script.js"></script>
+</body>
+</html>
